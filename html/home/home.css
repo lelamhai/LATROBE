@@ -1,0 +1,15 @@
+
+/* ================ Header =============== */
+.home-banner .home-header-banner {
+    width: 100%;
+    height: auto;
+}
+
+.home-banner .navbar-default-custom {
+    margin-bottom: 0;
+}
+
+.home-banner .container-fluid-custom {
+    padding-right: 0;
+    padding-left: 0;
+}

@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Responsive CSS Landscape Tablet
+   ========================================================================== */
+   @media only screen and (min-width: 960px) and (max-width: 1240px) {
+    
+   }
+   
+   
+   /* ==========================================================================
+      Responsive CSS Portrait Tablet
+      ========================================================================== */
+   @media only screen and (min-width: 768px) and (max-width: 959px) {
+       .wrap-content-contact .col-xs-12 {
+           padding-bottom: 15px;
+       }
+   }
+   
+   
+   /* ==========================================================================
+      Responsive CSS Landscape Mobile
+      ========================================================================== */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      .wrap-tabs .custom-nav-tabs li {
+         width: 50%;
+      }
+
+      .wrap-tabs .custom-nav-tabs li a {
+         text-align: center;
+      }
+
+      .detail-img-left {
+         padding-bottom: 15px;
+      }
+
+      .detail-content-right .title {
+         padding-bottom: 15px;
+      }
+
+      .detail-content-right {
+         padding: 0 15px;
+      }
+
+      .wrap-google-map {
+         padding-bottom: 30px;
+      }
+
+      .wrap-google-map iframe {
+         height: 250px;
+      }
+
+      .wrap-form .text-number textarea {
+         height: 150px;
+      }
+
+      .buttonSubmit  button {
+         font-size: 17px;
+      }
+
+      
+    }
+   
+   
+   /* ==========================================================================
+      Responsive CSS Portrait Mobile
+      ========================================================================== */
+   @media only screen and (min-width: 100px) and (max-width: 479px) {
+      .wrap-tabs .custom-nav-tabs li {
+         width: 50%;
+      }
+
+      .wrap-tabs .custom-nav-tabs li a {
+         text-align: center;
+      }
+
+      .detail-img-left {
+         padding-bottom: 15px;
+      }
+
+      .detail-content-right .title {
+         padding-bottom: 15px;
+      }
+
+      .detail-content-right {
+         padding: 0 15px;
+      }
+
+      .wrap-google-map {
+         padding-bottom: 30px;
+      }
+
+      .wrap-google-map iframe {
+         height: 250px;
+      }
+
+      .wrap-form .text-number textarea {
+         height: 150px;
+      }
+
+      .buttonSubmit  button {
+         font-size: 17px;
+      }
+   }
