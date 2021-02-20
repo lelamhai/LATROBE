@@ -1,15 +1,232 @@
+ul, li, a {
+    padding: 0;
+    margin: 0;
+}
 
-/* ================ Header =============== */
-.home-banner .home-header-banner {
+body {
+    color: #242424;
+}
+
+/* ========== Header ========== */
+#header {
+    background-color: #242424;
+}
+
+.menu {
+    display: flex;
+    padding: 0 80px;
+}
+
+.menu li {
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+    flex: 1 0 auto;
+    font-size: 16px;
+    font-weight: 500;
+    height: 48px;
+    color: #fff;
+}
+
+/* ========= Body ========= */
+#main {
+    display: inline-block;
+}
+
+/* Section Banner */
+.wrap-banner {
+    position: relative;
+}
+
+.wrap-content-banner {
+    padding: 30px 0;
+    width: 1600px;
+    margin: auto;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0; 
+    right: 0;
+}
+
+.text-big {
+    margin-left: 30px;
+    padding-bottom: 17px;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.2;
+    
+}
+
+.text-small {
+    margin-left: 30px;
+    padding-bottom: 36px;
+    font-size: 36px;
+}
+
+.button button {
+    margin-left: 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    font-size: 18px;
+    width: 192px;
+    height: 58px;
+}
+
+/* Section find */
+.wrap-find {
+    position: relative;
+    padding: 40px 120px;
+    width: 1280px;
+    display: grid;
+    margin: auto;
+    background-color: #fff;
+    top: -75px;
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 30%);
+}
+
+.title-find {
+    font-size: 35px;
+    color: rgb(36, 36, 36);
+    font-weight: 600;
+}
+
+.wrap-search-find {
+    display: flex;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: #fff;
+    height: 58px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icon-search-find {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text-search-find {
+    width: 90%;
+}
+
+.text-search-find input {
+    border-color: transparent;
+    height: 55px;
     width: 100%;
-    height: auto;
+    border-radius: 0;
 }
 
-.home-banner .navbar-default-custom {
-    margin-bottom: 0;
+.button-search-find {
+    width: 100px;
+    height: 100%;
+    float: right;
 }
 
-.home-banner .container-fluid-custom {
-    padding-right: 0;
-    padding-left: 0;
+.button-search-find button {
+    background-color: rgb(226, 35, 27);
+    color: #fff;
+    border-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap-browse {
+    padding-bottom: 20px;
+}
+
+.title-browse {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.wrap-list-left,
+.wrap-list-right {
+    display: grid;
+}
+
+.wrap-list-left li,
+.wrap-list-right li {
+    border-bottom: 2px solid rgb(204, 204, 204);
+    width: 100%;
+    height: 64px;
+    list-style: none;    
+    display: inline-grid;
+    align-items: center;
+}
+
+.wrap-list-left li:hover,
+.wrap-list-right li:hover {
+    border-bottom: 2px solid #e2231b;
+}
+
+.wrap-list-left li:hover a,
+.wrap-list-right li:hover a {
+    color: #e2231b;
+}
+
+.wrap-list-left li a,
+.wrap-list-right li a {
+    font-size: 18px;
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+}
+
+
+
+.wrap-list-left li a img,
+.wrap-list-right li a img {
+    float: right;
+}
+
+.list-left-browse {
+    float: left;
+    width: 50%;
+    padding-right: 15px;
+}
+
+.list-right-browse {
+    float: right;
+    width: 50%;
+    padding-left: 15px;
+}
+
+/* section partner*/
+#partner {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.title-partner {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 60px;
+}
+
+.wrap-partner {
+    display: flex;
+}
+
+.wrap-partner li {
+    list-style: none;
+    width: 24%;
+    text-align: center;
+
+}
+
+.item-title-partner h3 {
+    color: #e2231b;
+}
+
+.item-discription-partner {
+    font-size: 18px;
+    color: rgb(36, 36, 36);
+    padding-bottom: 15px;
+}
+
+.item-find-more-partner a {
+    font-size: 14px;
+    color: rgb(226, 35, 27);
+    text-decoration: underline;
 }
