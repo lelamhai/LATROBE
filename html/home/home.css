@@ -5,6 +5,33 @@ ul, li, a {
 
 body {
     color: #242424;
+    font-size: 18px;
+}
+
+.title-common {
+    font-size: 35px;
+    color: rgb(36, 36, 36);
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.button-common button {
+    width: 200px;
+    height: 58px;
+    font-size: 18px;
+    background: transparent;
+    font-weight: 600;
+}
+
+.title-grid-post-common {
+    font-size: 23px;
+    color: rgb(36, 36, 36);
+    font-weight: 600;
+}
+
+.description-grid-post-common {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
 }
 
 /* ========== Header ========== */
@@ -64,31 +91,24 @@ body {
     font-size: 36px;
 }
 
-.button button {
+.button-banner button {
     margin-left: 30px;
-    background: transparent;
     border: 2px solid #fff;
-    font-size: 18px;
-    width: 192px;
-    height: 58px;
 }
 
 /* Section find */
+#find {
+    width: 1280px;
+    margin: auto;
+}
+
 .wrap-find {
     position: relative;
     padding: 40px 120px;
-    width: 1280px;
     display: grid;
-    margin: auto;
     background-color: #fff;
     top: -75px;
     box-shadow: 0px 8px 16px rgb(0 0 0 / 30%);
-}
-
-.title-find {
-    font-size: 35px;
-    color: rgb(36, 36, 36);
-    font-weight: 600;
 }
 
 .wrap-search-find {
@@ -135,8 +155,6 @@ body {
 }
 
 .title-browse {
-    font-size: 22px;
-    font-weight: bold;
     padding-bottom: 15px;
 }
 
@@ -167,12 +185,8 @@ body {
 
 .wrap-list-left li a,
 .wrap-list-right li a {
-    font-size: 18px;
-    color: rgb(36, 36, 36);
     text-decoration: none;
 }
-
-
 
 .wrap-list-left li a img,
 .wrap-list-right li a img {
@@ -193,14 +207,13 @@ body {
 
 /* section partner*/
 #partner {
-    max-width: 1600px;
+    width: 1600px;
     margin: auto;
+    padding-bottom: 75px;
 }
 
 .title-partner {
     text-align: center;
-    font-size: 35px;
-    font-weight: 600;
     padding-bottom: 60px;
 }
 
@@ -220,8 +233,8 @@ body {
 }
 
 .item-discription-partner {
-    font-size: 18px;
     color: rgb(36, 36, 36);
+    font-weight: 550;
     padding-bottom: 15px;
 }
 
@@ -230,3 +243,124 @@ body {
     color: rgb(226, 35, 27);
     text-decoration: underline;
 }
+
+/* section women*/
+#women {
+    width: 1280px;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+.wrap-women {
+    display: flex;
+}
+
+.wrap-left-women {
+    width: 40%;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+}
+
+.wrap-right-women {
+    width: 60%;
+}
+
+.title-women {
+    text-align: center;
+}
+
+.description-women {
+    font-size: 18px;
+    color: gb(36, 36, 36);
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+.more-women {
+    text-align: center;
+}
+.more-women button{
+    border: 2px solid rgb(226, 35, 27);
+    color: rgb(226, 35, 27);
+}
+
+.wrap-right-women img {
+    width: 100%;
+    height: auto;
+}
+
+/* section start */
+#start {
+    width: 1280px;
+    margin: auto;
+    padding-bottom: 75px;
+}
+
+.top-start {
+    padding-bottom: 30px;
+}
+
+.wrap-start {
+    display: flex;
+}
+
+.wrap-start .item-start {
+    list-style: none;
+    width: 30%;
+    flex: 1 0 auto;
+    padding: 0 15px;
+}
+
+.wrap-start .item-start:first-child {
+    padding-left: 0;
+}
+
+.wrap-start .item-start:last-child {
+    padding-right: 0;
+}
+
+.wrap-left-start img {
+    width: 100%;
+}
+
+.bottom-start {
+    display: flex;
+}
+
+.wrap-item-left-start a,
+.wrap-item-right-start a {
+    text-decoration: none;
+}
+
+.wrap-item-left-start a:hover .title-item-bottom-start,
+.wrap-item-right-start a:hover .title-item-bottom-start{
+    color: rgb(226, 35, 27);
+}
+
+.wrap-item-left-start {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.wrap-item-right-start {
+    width: 50%;
+    padding-left: 15px;
+}
+
+.img-left-bottom-start img,
+.img-right-bottom-start img {
+    width: 100%;
+}
+
+.title-item-bottom-start {
+    padding-bottom: 15px;
+}
+
+.content-item-bottom-start {
+    padding: 30px;
+    border: 1px solid rgb(204, 204, 204);
+    height: 180px;
+}
+
