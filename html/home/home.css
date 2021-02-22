@@ -33,11 +33,59 @@ body {
     color: rgb(36, 36, 36);
     text-decoration: none;
 }
-
 /* ========== Header ========== */
 #header {
     background-color: #242424;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
 }
+
+.menu-top {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+}
+
+.wrap-menu-top {
+    display: flex;
+}
+
+.wrap-menu-top ul{
+    display: flex;
+    align-items: center;
+}
+
+.wrap-menu-top ul li {
+    margin-left: 20px;
+}
+
+.wrap-menu-top ul li a {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+}
+
+.wrap-menu-top ul li:hover a {
+    color: rgb(226, 35, 27);
+}
+
+.wrap-search-menu-top {
+    margin-left: 15px;
+}
+
+.wrap-search-menu-top button {
+    height: 80px;
+    width: 80px;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+
 
 .menu {
     display: flex;
@@ -45,15 +93,47 @@ body {
 }
 
 .menu li {
-    display: inline-flex;
-    align-items: center;
+    /* display: inline-flex;
+    flex: 1 0 auto; */
+    /* align-items: center;
     list-style: none;
-    flex: 1 0 auto;
     font-size: 16px;
     font-weight: 500;
-    height: 48px;
-    color: #fff;
+    height: 48px; */
+
+    padding: 0 15px;
 }
+
+.menu li a {
+    display: block;
+    /* color: #fff; */
+    text-decoration: none;
+}
+
+.sub {
+    position: absolute;
+    display: none;
+}
+
+.menu li:hover .sub {
+    display: block;
+}
+
+.sub li {
+    float: left;
+    padding: 5px 10px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    /* color: #fff; */
+    text-decoration: none;
+}
+
+
 
 /* ============================================================== Body =========================================================== */
 #main {
@@ -94,6 +174,11 @@ body {
 .button-banner button {
     margin-left: 30px;
     border: 2px solid #fff;
+}
+
+.button-banner button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 30%);
 }
 
 /* Section find */
@@ -140,6 +225,11 @@ body {
     width: 100px;
     height: 100%;
     float: right;
+}
+
+.button-search-find button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 30%);
 }
 
 .button-search-find button {
@@ -286,6 +376,11 @@ body {
     color: rgb(226, 35, 27);
 }
 
+.more-women button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 30%);
+}
+
 .wrap-right-women img {
     width: 100%;
     height: auto;
@@ -329,6 +424,29 @@ body {
     display: flex;
 }
 
+.wrap-item-left-start {
+    width: 50%;
+    margin-right: 15px;
+}
+
+.wrap-item-right-start {
+    width: 50%;
+    margin-left: 15px;
+}
+
+
+.wrap-item-left-start:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 30%);
+}
+
+.wrap-item-right-start:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 30%);
+}
+
 .wrap-item-left-start a,
 .wrap-item-right-start a {
     text-decoration: none;
@@ -339,15 +457,8 @@ body {
     color: rgb(226, 35, 27);
 }
 
-.wrap-item-left-start {
-    width: 50%;
-    padding-right: 15px;
-}
 
-.wrap-item-right-start {
-    width: 50%;
-    padding-left: 15px;
-}
+
 
 .img-left-bottom-start img,
 .img-right-bottom-start img {
@@ -389,6 +500,12 @@ body {
 
 .wrap-item-clever {
     border: 1px solid rgb(204, 204, 204);
+}
+
+.wrap-item-clever:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 30%);
 }
 
 .item-image-clever img {
@@ -456,6 +573,11 @@ body {
     background-color: transparent;
 }
 
+.wrap-button-event button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 30%);
+}
+
 /* section indigenous */
 #indigenous {
     padding-bottom: 75px;
@@ -493,6 +615,16 @@ body {
 /* ============================================================== footer ========================================================= */
 footer {
     background-color: #363636;
+    position: relative;
+
+}
+
+.bg-footer {
+    text-align: center;
+    opacity: .08;
+    width: 80%;
+    z-index: -1;
+   margin: 0 auto;
 }
 
 .wrap-footer {
@@ -500,6 +632,10 @@ footer {
     width: 1450px;
     margin: auto;
     padding: 115px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .content-search-footer {
@@ -516,6 +652,11 @@ footer {
 
 .content-search-footer button {
     width: 48px;
+}
+
+.content-search-footer button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 30%);
 }
 
 .wrap-left-footer {
