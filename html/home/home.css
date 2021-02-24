@@ -36,7 +36,7 @@ body {
 /* ========== Header ========== */
 #header {
     background-color: #242424;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     z-index: 1;
     width: 100%;
@@ -138,16 +138,26 @@ li a {
 /* ============================================================== Body =========================================================== */
 #main {
     display: inline-block;
+    margin-top: 106px;
 }
 
 /* Section Banner */
+.wrap-banner-mobile {
+    display: none;
+}
+
 .wrap-banner {
     position: relative;
 }
 
+.wrap-banner > img {
+    width: 100%;
+    height: auto;
+}
+
 .wrap-content-banner {
     padding: 30px 0;
-    width: 1570px;
+    max-width: 1570px;
     margin: auto;
     position: absolute;
     color: #fff;
@@ -156,8 +166,16 @@ li a {
     right: 0;
 }
 
+.icon {
+    padding-bottom: 35px;
+}
+
+.icon img {
+    width: 200px;
+    height: auto;
+}
+
 .text-big {
-    margin-left: 30px;
     padding-bottom: 17px;
     font-weight: 700;
     font-size: 55px;
@@ -166,13 +184,11 @@ li a {
 }
 
 .text-small {
-    margin-left: 30px;
     padding-bottom: 36px;
     font-size: 36px;
 }
 
 .button-banner button {
-    margin-left: 30px;
     border: 2px solid #fff;
 }
 
@@ -183,7 +199,7 @@ li a {
 
 /* Section find */
 #find {
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
 }
 
@@ -297,9 +313,23 @@ li a {
 
 /* section partner*/
 #partner {
-    width: 1570px;
+    max-width: 1570px;
     margin: auto;
     padding-bottom: 75px;
+}
+
+.item {
+    text-align: center;
+}
+
+.wrap-find-out {
+    display: inline-flex;
+    align-items: center;
+}
+
+.item .item-logo-partner img {
+    width: initial;
+    display: initial;
 }
 
 .title-partner {
@@ -311,9 +341,12 @@ li a {
     display: flex;
 }
 
+.wrap-partner li img {
+    display: initial;
+}
+
 .wrap-partner li {
     list-style: none;
-    width: 24%;
     text-align: center;
 
 }
@@ -336,21 +369,22 @@ li a {
 
 /* section women*/
 #women {
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
     padding-bottom: 70px;
 }
 
 .wrap-women {
     display: flex;
+    border: 1px solid rgb(204, 204, 204);
 }
 
 .wrap-left-women {
     width: 40%;
-    border: 1px solid rgb(204, 204, 204);
-    padding: 0 25px;
     display: flex;
     align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .wrap-right-women {
@@ -388,7 +422,7 @@ li a {
 
 /* section start */
 #start {
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
     padding-bottom: 75px;
 }
@@ -399,6 +433,10 @@ li a {
 
 .wrap-start {
     display: flex;
+}
+
+.title-top-start {
+    text-align: center;
 }
 
 .wrap-start .item-start {
@@ -477,13 +515,18 @@ li a {
 
 /* section clever */
 #clever {
-    width: 1510px;
+    max-width: 1510px;
     margin: auto;
     padding-bottom: 45px;
 }
 
 .title-clever {
     text-align: center;
+}
+
+.wrap-clever {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .wrap-clever .item-clever{
@@ -518,7 +561,7 @@ li a {
 
 /* section event & news */
 #event {
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
     padding-bottom: 75px;
     display: flex;
@@ -595,7 +638,7 @@ li a {
 
 /* section contact */
 #contact {
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
     padding-bottom: 75px;
 }

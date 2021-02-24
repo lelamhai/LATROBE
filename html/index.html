@@ -11,7 +11,12 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+  <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+
   <link rel="stylesheet" href="home/home.css">
+  <link rel="stylesheet" href="home/responsive-home.css">
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -27,10 +32,9 @@
             <div class="wrap-menu-top">
               <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">List Product 1</a></li>
+                <li><a href="">List Product 1</a></li> 
                 <li><a href="">List Product 2</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href="">Q&A</a></li>
               </ul>
   
               <div class="wrap-search-menu-top">
@@ -39,7 +43,7 @@
             </div>
           </div>
 
-          <div class="container-fluid">
+          <!-- <div class="wrap-menu">
             <ul class="menu">
               <li><a href="">Cử nhân</a>
                  <ul class="sub">
@@ -81,12 +85,12 @@
               <li><a href="">Research</a></li>
               <li><a href="">About</a></li>
             </ul>
-          </div>
+          </div> -->
         </section>
         
     </header>
 
-    <div id="main">
+    <main>
         <section id="banner-home">
           <div class="wrap-banner">
             <img src="imgs/img-banner.jpg" alt="">
@@ -105,7 +109,27 @@
                   Start studying online now
               </div>
               <div class="button-common button-banner">
-                <button>Find out more <img src="imgs/icon-chevron-right.svg" alt="" width="14" height="14"></button>
+                <button>Find out more 	&nbsp; 	&nbsp; <img src="imgs/icon-white-chevron-right.png" alt=""></button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="wrap-banner-mobile">
+            <div class="banner-mobile">
+              <img src="imgs/img-banner-mobile.jpg" alt="">
+            </div>
+            <div class="content-banner-mobile">
+              <div class="text-big">
+                A world-class education, <br>wherever you are
+              </div>
+
+              <div class="text-small">
+                  Start studying online now
+              </div>
+
+              <div class="button-common button-banner">
+                <button>Find out more 	&nbsp; 	&nbsp; <img src="imgs/icon-white-chevron-right.png" alt=""></button>
               </div>
 
             </div>
@@ -118,242 +142,376 @@
               <div class="title-common">
                 Find your course
               </div>
-              
+        
               <div class="wrap-search-find">
                 <div class="icon-search-find">
                   <img src="imgs/icon-search.svg" alt="" width="18" height="18">
                 </div>
-              
+        
                 <div class="text-search-find">
                   <input type="text" placeholder="Search for a course by keyword, course …">
                 </div>
-              
+        
                 <div class="button-search-find">
                   <button>Search</button>
                 </div>
-
+        
               </div>
             </div>
-            
+        
             <div class="wrap-browse">
               <div class="title-browse title-grid-post-common">Browse by discipline:</div>
               <div class="list-left-browse">
                 <ul class="wrap-list-left">
-                  <li><a href="" class="description-grid-post-common">Arts, social sciences and communications <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                  <li><a href="" class="description-grid-post-common">Education and teaching <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                  <li><a href="" class="description-grid-post-common">IT and engineering <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                  <li><a href="" class="description-grid-post-common">Science <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
+                  <li><a href="" class="description-grid-post-common">Arts, social sciences communications <img
+                        src="imgs/icon-arrow-right.png" alt=""></a></li>
+                  <li><a href="" class="description-grid-post-common">Education and teaching <img
+                        src="imgs/icon-arrow-right.png" alt=""></a></li>
+                  <li><a href="" class="description-grid-post-common">IT and engineering <img src="imgs/icon-arrow-right.png"
+                        alt=""></a></li>
+                  <li><a href="" class="description-grid-post-common">Science <img src="imgs/icon-arrow-right.png" alt=""></a>
+                  </li>
                 </ul>
               </div>
-
+        
               <div class="list-right-browse">
                 <ul class="wrap-list-right">
-                  <li><a href="" class="description-grid-post-common">Business and commerce <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                  <li><a href="" class="description-grid-post-common">Health <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                  <li><a href="" class="description-grid-post-common">Law and criminology <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
+                  <li><a href="" class="description-grid-post-common">Business and commerce <img src="imgs/icon-arrow-right.png"
+                        alt=""></a></li>
+                  <li><a href="" class="description-grid-post-common">Health <img src="imgs/icon-arrow-right.png" alt=""></a>
+                  </li>
+                  <li><a href="" class="description-grid-post-common">Law and criminology <img src="imgs/icon-arrow-right.png"
+                        alt=""></a></li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
-
+        
         <section id="partner">
           <div class="title-common title-partner">
-              Why choosing La Trobe is a clever move
+            Why choosing La Trobe is a clever move
           </div>
-
+        
+        
           <div class="content-partner">
-            <ul class="wrap-partner">
-              <li>
+            <div class="owl-carousel owl-theme">
+              <div class="item">
                 <div class="item-logo-partner">
                   <img src="imgs/img-logo-partner.svg" alt="">
                 </div>
-
+        
                 <div class="item-title-partner">
-                   <h3>Career Ready</h3>
+                  <h3>Career Ready</h3>
                 </div>
-
+        
                 <div class="item-discription-partner ">
                   Our Career Ready program is co-designed with industry
                 </div>
-
+        
                 <div class="item-find-more-partner">
-                  <a href="">Find out more <img src="imgs/icon-chevron-right.svg" alt="" width="14" height="14"></a> 
+                  <a href="">
+                    <div class="wrap-find-out">
+                      <div>Find out more</div>
+                      <div style="margin-left: 10px;"><img src="imgs/icon-red-chevron-right.png" alt="" width="8" height="12">
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </li>
-
-              <li>
+              </div>
+        
+        
+              <div class="item">
                 <div class="item-logo-partner">
                   <img src="imgs/img-logo-partner.svg" alt="">
                 </div>
-
+        
                 <div class="item-title-partner">
-                   <h3>Career Ready</h3>
+                  <h3>Career Ready</h3>
                 </div>
-
-                <div class="item-discription-partner">
+        
+                <div class="item-discription-partner ">
                   Our Career Ready program is co-designed with industry
                 </div>
-
+        
                 <div class="item-find-more-partner">
-                  <a href="">Find out more <img src="imgs/icon-chevron-right.svg" alt="" width="14" height="14"></a> 
+                  <a href="">
+                    <div class="wrap-find-out">
+                      <div>Find out more</div>
+                      <div style="margin-left: 10px;"><img src="imgs/icon-red-chevron-right.png" alt="" width="8" height="12">
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </li>
-
-              <li>
+              </div>
+        
+        
+              <div class="item">
                 <div class="item-logo-partner">
                   <img src="imgs/img-logo-partner.svg" alt="">
                 </div>
-
+        
                 <div class="item-title-partner">
-                   <h3>Career Ready</h3>
+                  <h3>Career Ready</h3>
                 </div>
-
-                <div class="item-discription-partner">
+        
+                <div class="item-discription-partner ">
                   Our Career Ready program is co-designed with industry
                 </div>
-
+        
                 <div class="item-find-more-partner">
-                  <a href="">Find out more <img src="imgs/icon-chevron-right.svg" alt="" width="14" height="14"></a> 
+                  <a href="">
+                    <div class="wrap-find-out">
+                      <div>Find out more</div>
+                      <div style="margin-left: 10px;"><img src="imgs/icon-red-chevron-right.png" alt="" width="8" height="12">
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </li>
-
-              <li>
+              </div>
+        
+        
+              <div class="item">
                 <div class="item-logo-partner">
                   <img src="imgs/img-logo-partner.svg" alt="">
                 </div>
-
+        
                 <div class="item-title-partner">
-                   <h3>Career Ready</h3>
+                  <h3>Career Ready</h3>
                 </div>
-
-                <div class="item-discription-partner">
+        
+                <div class="item-discription-partner ">
                   Our Career Ready program is co-designed with industry
                 </div>
-
+        
                 <div class="item-find-more-partner">
-                  <a href="">Find out more <img src="imgs/icon-chevron-right.svg" alt="" width="14" height="14"></a> 
+                  <a href="">
+                    <div class="wrap-find-out">
+                      <div>Find out more</div>
+                      <div style="margin-left: 10px;"><img src="imgs/icon-red-chevron-right.png" alt="" width="8" height="12">
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </li>
-
-              <li>
+              </div>
+        
+        
+        
+              <div class="item">
                 <div class="item-logo-partner">
                   <img src="imgs/img-logo-partner.svg" alt="">
                 </div>
-
+        
                 <div class="item-title-partner">
-                   <h3>Career Ready</h3>
+                  <h3>Career Ready</h3>
                 </div>
-
-                <div class="item-discription-partner">
+        
+                <div class="item-discription-partner ">
                   Our Career Ready program is co-designed with industry
                 </div>
-
+        
                 <div class="item-find-more-partner">
-                  <a href="">Find out more <img src="imgs/icon-chevron-right.svg" alt="" width="14" height="14"></a> 
+                  <a href="">
+                    <div class="wrap-find-out">
+                      <div>Find out more</div>
+                      <div style="margin-left: 10px;"><img src="imgs/icon-red-chevron-right.png" alt="" width="8" height="12">
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </li>
-            </ul>
+              </div>
+        
+        
+        
+              <div class="item">
+                <div class="item-logo-partner">
+                  <img src="imgs/img-logo-partner.svg" alt="">
+                </div>
+        
+                <div class="item-title-partner">
+                  <h3>Career Ready</h3>
+                </div>
+        
+                <div class="item-discription-partner ">
+                  Our Career Ready program is co-designed with industry
+                </div>
+        
+                <div class="item-find-more-partner">
+                  <a href="">
+                    <div class="wrap-find-out">
+                      <div>Find out more</div>
+                      <div style="margin-left: 10px;"><img src="imgs/icon-red-chevron-right.png" alt="" width="8" height="12">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+        
+        
+        
+              <div class="item">
+                <div class="item-logo-partner">
+                  <img src="imgs/img-logo-partner.svg" alt="">
+                </div>
+        
+                <div class="item-title-partner">
+                  <h3>Career Ready</h3>
+                </div>
+        
+                <div class="item-discription-partner ">
+                  Our Career Ready program is co-designed with industry
+                </div>
+        
+                <div class="item-find-more-partner">
+                  <a href="">
+                    <div class="wrap-find-out">
+                      <div>Find out more</div>
+                      <div style="margin-left: 10px;"><img src="imgs/icon-red-chevron-right.png" alt="" width="8" height="12">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+        
+        
+        
+              <div class="item">
+                <div class="item-logo-partner">
+                  <img src="imgs/img-logo-partner.svg" alt="">
+                </div>
+        
+                <div class="item-title-partner">
+                  <h3>Career Ready</h3>
+                </div>
+        
+                <div class="item-discription-partner ">
+                  Our Career Ready program is co-designed with industry
+                </div>
+        
+                <div class="item-find-more-partner">
+                  <a href="">
+                    <div class="wrap-find-out">
+                      <div>Find out more</div>
+                      <div style="margin-left: 10px;"><img src="imgs/icon-red-chevron-right.png" alt="" width="8" height="12">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section id="women">
-          <div class="wrap-women">
 
-            <div class="wrap-left-women">
-                <div class="content-women">
-                  <div class="title-common title-women">Women need more support to breast feed</div>
-                  <div class="description-women">
-                    Breastfeeding rates in regional communities are increasing, but a major study by La Trobe University researchers
-                    indicates the need for greater support for at-risk women to initiate breastfeeding.
-                  </div>
-                  <div class="button-common more-women">
-                    <button>More on the study <img src="imgs/icon-chevron-right.svg" alt="" width="14" height="14"></button>
-                  </div>
-                </div>
-            </div>
 
-           
-            <div class="wrap-right-women">
-              <img src="imgs/img-medium.jpg" alt="">
+
+
+      <section id="women">
+        <div class="wrap-women">
+          <div class="wrap-left-women">
+            <div class="content-women">
+              <div class="title-common title-women">Women need more support to breast feed</div>
+              <div class="description-women">
+                Breastfeeding rates in regional communities are increasing, but a major study by La Trobe University
+                researchers
+                indicates the need for greater support for at-risk women to initiate breastfeeding.
+              </div>
+              <div class="button-common more-women">
+                <button>More on the study &nbsp;<img src="imgs/icon-red-chevron-right.png" alt="" width="8" height="12"></button>
+              </div>
             </div>
           </div>
-        </section>
-
-        <section id="start">
-          <div class="top-start">
-            <div class="title-common">Start your studies at La Trobe</div>
-            <ul class="wrap-start">
-              <li class="item-start">
-                <div class="wrap-left-start">
-                  <img src="imgs/img-460.jpg" alt="">
-                </div>
-              </li>
-              <li class="item-start">
-
-                <ul class="wrap-list-left">
-                  <li><a href="" class="description-grid-post-common">Arts, social sciences and communications <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                  <li><a href="" class="description-grid-post-common">Education and teaching <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                  <li><a href="" class="description-grid-post-common">IT and engineering <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                  <li><a href="" class="description-grid-post-common">Science <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                </ul>
-                  
-              </li>
-              <li class="item-start">
-                <ul class="wrap-list-right">
-                  <li><a href="" class="description-grid-post-common">Arts, social sciences and communications <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                  <li><a href="" class="description-grid-post-common">Education and teaching <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                  <li><a href="" class="description-grid-post-common">IT and engineering <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                  <li><a href="" class="description-grid-post-common">Science <img src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
-                </ul>
-              </li>
-            </ul>
+      
+      
+          <div class="wrap-right-women">
+            <img src="imgs/img-medium.jpg" alt="">
           </div>
+        </div>
+      </section>
 
-          <div class="bottom-start">
-            <div class="wrap-item-left-start">
-              <a href="">
-                <div class="img-left-bottom-start">
-                  <img src="imgs/img-preview.jpg" alt="">
-                </div>
+      <section id="start">
+        <div class="top-start">
+          <div class="title-common title-top-start">Start your studies at La Trobe</div>
+          <ul class="wrap-start">
+            <li class="item-start">
+              <div class="wrap-left-start">
+                <img src="imgs/img-460.jpg" alt="">
+              </div>
+            </li>
 
-                <div class="content-item-bottom-start">
-                  <div class="title-grid-post-common title-item-bottom-start">
-                    Plan your online orientation
-                  </div>
-  
-                  <div class="description-grid-post-common">
-                    Get the most out of orientation by creating your own personalised plan.
-                  </div>
+            <li class="item-start">
+      
+              <ul class="wrap-list-left">
+                <li><a href="" class="description-grid-post-common">Arts, social sciences and communications <img
+                      src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
+                <li><a href="" class="description-grid-post-common">Education and teaching <img
+                      src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
+                <li><a href="" class="description-grid-post-common">IT and engineering <img src="imgs/icon-arrow-right.svg"
+                      alt="" width="18" height="18"></a></li>
+                <li><a href="" class="description-grid-post-common">Science <img src="imgs/icon-arrow-right.svg" alt=""
+                      width="18" height="18"></a></li>
+              </ul>
+      
+            </li>
+            <li class="item-start">
+              <ul class="wrap-list-right">
+                <li><a href="" class="description-grid-post-common">Arts, social sciences and communications <img
+                      src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
+                <li><a href="" class="description-grid-post-common">Education and teaching <img
+                      src="imgs/icon-arrow-right.svg" alt="" width="18" height="18"></a></li>
+                <li><a href="" class="description-grid-post-common">IT and engineering <img src="imgs/icon-arrow-right.svg"
+                      alt="" width="18" height="18"></a></li>
+                <li><a href="" class="description-grid-post-common">Science <img src="imgs/icon-arrow-right.svg" alt=""
+                      width="18" height="18"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="bottom-start">
+          <div class="wrap-item-left-start">
+            <a href="">
+              <div class="img-left-bottom-start">
+                <img src="imgs/img-preview.jpg" alt="">
+              </div>
+      
+              <div class="content-item-bottom-start">
+                <div class="title-grid-post-common title-item-bottom-start">
+                  Plan your online orientation
                 </div>
-              </a>
-            </div>
-
-            <div class="wrap-item-right-start">
-              <a href="">
-                <div class="img-left-bottom-start">
-                  <img src="imgs/img-preview.jpg" alt="">
+      
+                <div class="description-grid-post-common">
+                  Get the most out of orientation by creating your own personalised plan.
                 </div>
-
-                <div class="content-item-bottom-start">
-                  <div class="title-grid-post-common title-item-bottom-start">
-                    Plan your online orientation
-                  </div>
-  
-                  <div class="description-grid-post-common">
-                    Regional Year 12 students who travel more than 90 minutes to get to university may be eligible for the $5,000 Tertiary Access Payment (TAP) grant.
-                  </div>
-                </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
-        </section>
+      
+          <div class="wrap-item-right-start">
+            <a href="">
+              <div class="img-left-bottom-start">
+                <img src="imgs/img-preview.jpg" alt="">
+              </div>
+      
+              <div class="content-item-bottom-start">
+                <div class="title-grid-post-common title-item-bottom-start">
+                  Plan your online orientation
+                </div>
+      
+                <div class="description-grid-post-common">
+                  Get the most out of orientation by creating your own personalised plan.
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <section id="clever">
+      <section id="clever">
           <div class="title-common title-clever">Clever thinking</div>
           <div class="wrap-list-clever">
-            <ul class="row wrap-clever">
-              <div class="col-md-4 item-clever">
+            <div class="row wrap-clever">
+              <div class="col-md-4 col-sm-6 col-xs-12 item-clever">
                 <a href="">
                   <div class="wrap-item-clever">
                     <div class="item-image-clever">
@@ -362,9 +520,9 @@
                     <div class="title-grid-post-common item-title-clever">Fighting fake news in the COVID-19 era</div>
                   </div>
                 </a>
-              </div>
+              </div> 
   
-              <div class="col-md-4 item-clever">
+              <div class="col-md-4 col-sm-6 col-xs-12 item-clever">
                 <a href="">
                   <div class="wrap-item-clever">
                     <div class="item-image-clever">
@@ -375,7 +533,7 @@
                 </a>
               </div>    
   
-              <div class="col-md-4 item-clever">
+              <div class="col-md-4 col-sm-6 col-xs-12 item-clever">
                 <a href="">
                   <div class="wrap-item-clever">
                     <div class="item-image-clever">
@@ -383,42 +541,9 @@
                     </div>
                     <div class="title-grid-post-common item-title-clever">Fighting fake news in the COVID-19 era</div>
                   </div>
-                </a>
+                </a>   
               </div>
-
-              <div class="col-md-4 item-clever">
-                <a href="">
-                  <div class="wrap-item-clever">
-                    <div class="item-image-clever">
-                      <img src="imgs/img-clever.jpg" alt="">
-                    </div>
-                    <div class="title-grid-post-common item-title-clever">Fighting fake news in the COVID-19 era</div>
-                  </div>
-                </a>
-              </div>    
-
-              <div class="col-md-4 item-clever">
-                <a href="">
-                  <div class="wrap-item-clever">
-                    <div class="item-image-clever">
-                      <img src="imgs/img-clever.jpg" alt="">
-                    </div>
-                    <div class="title-grid-post-common item-title-clever">Fighting fake news in the COVID-19 era</div>
-                  </div>
-                </a>
-              </div>    
-
-              <div class="col-md-4 item-clever">
-                <a href="">
-                  <div class="wrap-item-clever">
-                    <div class="item-image-clever">
-                      <img src="imgs/img-clever.jpg" alt="">
-                    </div>
-                    <div class="title-grid-post-common item-title-clever">Fighting fake news in the COVID-19 era</div>
-                  </div>
-                </a>
-              </div>    
-            </ul>
+            </div>
           </div>
         </section>
 
@@ -484,7 +609,7 @@
 
               <li>
                 <div class="wrap-button-event">
-                  <button>More events <img src="imgs/icon-chevron-right.svg" alt="" width="14" height="14"></button>
+                  <button>More events &nbsp;<img src="imgs/icon-red-chevron-right.png" alt="" width="8" height="12"></button>
                 </div>
               </li>
 
@@ -552,14 +677,14 @@
 
               <li>
                 <div class="wrap-button-event">
-                  <button>More events <img src="imgs/icon-chevron-right.svg" alt="" width="14" height="14"></button>
+                  <button>More events &nbsp;<img src="imgs/icon-red-chevron-right.png" alt="" width="8" height="12"></button>
                 </div>
               </li>
             </ul>
           </div>
         </section>
 
-        <section id="indigenous">
+         <section id="indigenous">
           <div class="wrap-indigenous">
             <div class="title-indigenous title-common">Indigenous Acknowledgement</div>
             <div class="description-indigenous description-grid-post-common ">La Trobe University proudly acknowledges the traditional custodians of the lands where its <br> campuses are located in Victoria. 
@@ -573,21 +698,21 @@
           <div class="wrap-contact">
             <div class="title-contact title-common">Contact La Trobe</div>
             <div class="row wrap-number-contact">
-              <div class="col-md-4 item-wrap-number-contact">
+              <div class="col-md-4 col-sm-12 item-wrap-number-contact">
                 <div class="wrap-item-number-contact">
                   <div class="item-title-number-contact title-grid-post-common">Current students</div>
                   <div class="item-number-number-contact title-grid-post-common">1300 528 762</div>
                 </div>
               </div>
 
-              <div class="col-md-4 item-wrap-number-contact">
+              <div class="col-md-4 col-sm-12 item-wrap-number-contact">
                 <div class="wrap-item-number-contact">
                   <div class="item-title-number-contact title-grid-post-common">Future International students</div>
                   <div class="item-number-number-contact title-grid-post-common">(+61 3) 6145 0033</div>
                 </div>
               </div>
 
-              <div class="col-md-4 item-wrap-number-contact">
+              <div class="col-md-4 col-sm-12 item-wrap-number-contact">
                 <div class="wrap-item-number-contact">
                   <div class="item-title-number-contact title-grid-post-common">Future students</div>
                   <div class="item-number-number-contact title-grid-post-common">1300 135 045</div>
@@ -596,9 +721,9 @@
             </div>
           </div>
         </section>
-    </div>
+      </main>
 
-    <footer>
+    <!-- <footer>
       <div class="bg-footer">
         <img src="imgs/img-eagle-footer.svg" alt="">
       </div>
@@ -683,9 +808,34 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+    <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      dots: false,
+      nav: false,
+      responsive:{
+          0:{
+              items:1
+          },
+          480:{
+              items:3
+          },
+          813:{
+              items:4
+          },
+          1024:{
+              items:5
+          }
+      }
+  })
+    </script>
 </body>
 
 </html>
