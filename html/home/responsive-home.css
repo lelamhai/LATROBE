@@ -248,6 +248,18 @@
     .item-wrap-number-contact {
         padding-bottom: 15px;
     }
+
+    .wrap-footer {
+        display: block;
+    }
+
+    .wrap-left-footer {
+        width: 100%;
+    }
+
+    .content-search-footer {
+        width: 100%;
+    }
 }
 
 
