@@ -43,7 +43,18 @@ nav #url-nav::before {
   padding: 18px 52px 18px 14px;
   text-decoration: none;
   background: #efefef;
+  border-left: 8px soli transparent;
   font-weight: 600;
+}
+
+.open-child a:hover{
+  text-decoration: none;
+  border-left: 8px solid #e42312;
+  padding: 18px 52px 18px 6px;
+}
+
+.acitve a:hover{
+  border:none
 }
 
 .acitve {
