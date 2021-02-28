@@ -718,6 +718,11 @@ footer {
     padding-bottom: 10px;
 }
 
+.title-footer > h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .wrap-info-footer .col-md-4 {
     line-height: 25px;
 }
