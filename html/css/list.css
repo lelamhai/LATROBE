@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-align: unset;
 }
 
 main {
@@ -145,11 +146,11 @@ nav #url-nav::before {
   justify-content: space-between;
 }
 
-.content #menu_content .item img {
+.content #menu_content .item-list img {
   width: 100%;
 }
 
-.content #menu_content .item .info {
+.content #menu_content .item-list .info {
   padding: 15px;
   width: 100%;
   position: relative;
@@ -162,7 +163,7 @@ nav #url-nav::before {
   font-weight: 700;
 }
 
-.content #menu_content .item .info p {
+.content #menu_content .item-list .info p {
   line-height: 24px;
   margin: 0;
   font-size: 18px;
@@ -170,7 +171,7 @@ nav #url-nav::before {
   color: #242424;
 }
 
-.content #menu_content li .item .info::before {
+.content #menu_content li .item-list .info::before {
   color: #fff;
   position: absolute;
   right: 30px;
@@ -276,47 +277,7 @@ nav #url-nav::before {
 }
 
 /* iphone */
-@media screen and (max-width: 375px) { 
-  
-  /* main {
-    position: relative;
-  }
-
-  nav {
-    display: none;
-    position: absolute;
-    top: 106px;
-    left: 0px;
-    z-index: 1;
-    height: 90%;
-    background-color: #f7f7f7;
-  }
-
-  #menu-nav{
-    position: relative;
-  }
-
-  #bnt-hide-menu{
-    position: absolute;
-    right: -14px;
-    top: 0px;
-    visibility: visible;
-    font-weight: 800;
-  }
-
-  #bnt-hide-menu > button{
-    border: none;
-    background-color: #dedede;
-    padding: 2px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-
-  #se_main{
-    flex-basis: 100%;
-    width: 100%;
-  } */
-
+@media screen and (max-width: 480px) { 
   #banner h2{
     font-size: 28px;
   }
