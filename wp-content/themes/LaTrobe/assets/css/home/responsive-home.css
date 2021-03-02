@@ -1,0 +1,460 @@
+@media only screen and (min-width: 1276px) and (max-width: 1830px) {
+   .wrap-content-banner {
+     padding-left: 30px;
+   }
+ 
+   .icon {
+     padding-bottom: 15px;
+   }
+ 
+   .icon img {
+     width: 150px;
+   }
+ 
+   .text-big {
+     font-size: 35px;
+   }
+ 
+   .text-small {
+     font-size: 25px;
+   }
+ }
+ 
+ @media only screen and (min-width: 100px) and (max-width: 1570px) {
+   #partner {
+     padding-left: 15px;
+     padding-right: 15px;
+   }
+ }
+ 
+ @media only screen and (min-width: 1050px) and (max-width: 1276px) {
+   .wrap-content-banner {
+     padding: 15px 30px;
+   }
+ 
+   .menu {
+     padding: 0 15px;
+   }
+ 
+   .icon {
+     padding-bottom: 15px;
+   }
+ 
+   .icon img {
+     width: 150px;
+     height: auto;
+   }
+ 
+   .text-big {
+     font-size: 30px;
+   }
+ 
+   .text-small {
+     font-size: 20px;
+     padding-bottom: 15px;
+   }
+ 
+   .button-common button {
+     width: 200px;
+     height: 50px;
+   }
+ }
+ 
+ @media only screen and (min-width: 768px) and (max-width: 1050px) {
+   .wrap-content-banner {
+     padding: 5px 30px;
+   }
+ 
+   .icon {
+     padding-bottom: 5px;
+   }
+ 
+   .icon img {
+     width: 120px;
+     height: auto;
+   }
+ 
+   .text-big {
+     font-size: 25px;
+     padding-bottom: 5px;
+   }
+ 
+   .text-small {
+     font-size: 20px;
+     padding-bottom: 5px;
+   }
+ 
+   .button-common button {
+     width: 200px;
+     height: 50px;
+   }
+ 
+   .title-women {
+     font-size: 30px;
+   }
+ 
+   .wrap-left-women {
+     width: 60%;
+     padding: 15px 10px;
+   }
+ 
+   .wrap-right-women {
+     display: inline-flex;
+     align-items: center;
+   }
+ 
+   /* .wrap-start {
+         display: block;
+     } */
+ 
+   .wrap-start .item-start:first-child {
+     display: none;
+   }
+ 
+   .bottom-start,
+   .wrap-start {
+     margin-left: 15px;
+     margin-right: 15px;
+   }
+ 
+   .event {
+     margin-left: 15px;
+     margin-right: 15px;
+   }
+ }
+ 
+ @media only screen and (min-width: 100px) and (max-width: 767px) {
+   .wrap-menu-top {
+     display: none;
+   }
+ 
+   .wrap-banner-mobile {
+     display: block;
+     color: #fff;
+   }
+ 
+   .wrap-banner {
+     display: none;
+   }
+ 
+   .content-banner-mobile {
+     background-color: #e2231b;
+     padding: 20px;
+   }
+ 
+   .banner-mobile img {
+     width: 100%;
+   }
+ 
+   .text-big {
+     font-size: 40px;
+   }
+ 
+   .text-small {
+     font-size: 32px;
+   }
+ 
+   .wrap-find {
+     padding: 15px;
+     top: 0;
+   }
+ 
+   .list-left-browse {
+     float: initial;
+     width: 100%;
+     padding-right: 0;
+   }
+ 
+   .list-right-browse {
+     float: initial;
+     width: 100%;
+     padding-left: 0;
+   }
+ 
+   .wrap-start .item-start:first-child {
+     display: none;
+   }
+ 
+   .bottom-start,
+   .wrap-start {
+     margin-left: 15px;
+     margin-right: 15px;
+   }
+ 
+   .bottom-start {
+     display: block;
+   }
+ 
+   .wrap-item-left-start {
+     width: 100%;
+     margin-bottom: 15px;
+   }
+ 
+   .wrap-item-right-start {
+     width: 100%;
+     margin-left: 0px;
+   }
+ 
+   .img-left-bottom-start {
+     display: none;
+   }
+ 
+   .content-item-bottom-start {
+     height: initial;
+   }
+ 
+   #clever {
+     margin-left: 15px;
+     margin-right: 15px;
+   }
+ 
+   .item-image-clever {
+     display: none;
+   }
+ 
+   .item-clever {
+     padding-left: 0;
+     padding-right: 0;
+   }
+ 
+   #event {
+     display: block;
+     margin-left: 15px;
+     margin-right: 15px;
+     padding-right: 0;
+   }
+ 
+   .event {
+     width: 100%;
+   }
+ 
+   .item-content-event {
+     padding-left: 15px;
+   }
+ 
+   .wrap-indigenous {
+     padding: 15px;
+   }
+ 
+   .item-wrap-number-contact {
+     padding-bottom: 15px;
+   }
+ 
+   .wrap-footer {
+     display: block;
+   }
+ 
+   .wrap-left-footer {
+     width: 100%;
+   }
+ 
+   .content-search-footer {
+     width: 100%;
+   }
+ }
+ 
+ /* ==========================================================================
+    Responsive CSS Landscape Tablet
+    ========================================================================== */
+ @media only screen and (min-width: 960px) and (max-width: 1240px) {
+   .wrap-women {
+     margin-left: 15px;
+     margin-right: 15px;
+   }
+ }
+ 
+ /* ==========================================================================
+    Responsive CSS Portrait Tablet
+    ========================================================================== */
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+   .wrap-women {
+     margin-left: 15px;
+     margin-right: 15px;
+   }
+ }
+ 
+ /* ==========================================================================
+    Responsive CSS Landscape Mobile
+    ========================================================================== */
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+   #find {
+     padding-bottom: 75px;
+   }
+ 
+   .wrap-women {
+     display: block;
+     margin-left: 15px;
+     margin-right: 15px;
+   }
+ 
+   .wrap-left-women {
+     width: 100%;
+     padding-bottom: 15px;
+   }
+ 
+   .wrap-right-women {
+     width: 100%;
+   }
+ }
+ 
+ /* ==========================================================================
+    Responsive CSS Portrait Mobile
+    ========================================================================== */
+ @media only screen and (min-width: 100px) and (max-width: 479px) {
+   #find {
+     padding-bottom: 75px;
+   }
+ 
+   .wrap-women {
+     display: block;
+     margin-left: 15px;
+     margin-right: 15px;
+   }
+ 
+   .wrap-left-women {
+     width: 100%;
+     padding-bottom: 15px;
+   }
+ 
+   .wrap-right-women {
+     width: 100%;
+   }
+ 
+   .wrap-start {
+     display: block;
+   }
+ 
+   .wrap-start .item-start:nth-child(2) {
+     width: 100%;
+     padding-right: 0;
+   }
+ 
+   .wrap-start .item-start:last-child {
+     width: 100%;
+   }
+ }
+ 
+ /* ================================Responsive - Footer===================================== */
+ /* Author: Quang Trương */
+ 
+ /* ipad-pro */
+ @media screen and (max-width: 1024px) {
+   .wrap-footer {
+     width: 100%;
+     padding-left: 30px;
+     padding-right: 30px;
+   }
+ 
+   .list-socialnetwork-footer {
+     grid-template-columns: auto auto auto;
+     justify-items: center;
+     grid-gap: 10px;
+     justify-content: center;
+     margin-bottom: 20px;
+   }
+ 
+   .item-socilnetwork {
+     padding: unset;
+     margin: unset;
+   }
+ 
+   .child-title {
+     padding-left: 10px;
+   }
+   .wrap-logo-footer img {
+     width: 100%;
+   }
+ 
+   .row > .col-md-4{
+     padding-left: unset;
+   }
+ 
+ }
+ 
+ /* ipad */
+ @media screen and (max-width: 768px) {
+   
+   footer {
+     height: 800px;
+   }
+ 
+   .wrap-left-footer {
+     flex-basis: 60%;
+     width: unset;
+   }
+ 
+   .wrap-right-footer{
+     flex-basis: 40%;
+     width: unset;
+   }
+ 
+  .row{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+   }
+ 
+   .row>.col-md-4{
+     flex-basis: 50%;
+   }
+ }
+ 
+ /* iphone X -> 5 */
+ @media screen and (max-width: 480px) {
+   footer {
+         height: 1024px;
+   }
+ 
+   .bg-footer > img,
+   .bg-footer {
+     width: 100%;
+   }
+ 
+   .wrap-footer {
+     padding: unset;
+     display: flex;
+     max-width: unset;
+     width: 100%;
+     flex-direction: column-reverse;
+     align-items: center;
+     padding: 0px 15px;
+   }
+   .wrap-right-footer,
+   .wrap-left-footer {
+     flex-basis: 90%;
+     width: unset;
+   }
+   .col-md-12 {
+     padding: unset;
+   }
+ 
+   .list-socialnetwork-footer {
+     grid-template-columns: 22% 22% 22%;
+     justify-items: center;
+     grid-gap: 10px;
+     justify-content: center;
+     margin-bottom: 20px;
+   }
+ 
+   .item-socilnetwork {
+     padding: unset;
+     margin: unset;
+   }
+ 
+   .content-search-footer {
+     padding-bottom: 10px;
+   }
+ 
+   .child-title {
+     padding-left: 10px;
+   }
+ 
+   .row{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: center;
+   }
+ }
+ 

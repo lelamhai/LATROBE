@@ -1,0 +1,171 @@
+.wrap-detail-content {
+    margin-bottom: 45px;
+}
+
+.detail-img-left {
+    margin-bottom: 15px;
+}
+
+.item-small-galley img {
+    width: 100px;
+    height: auto;
+}
+
+.detail-img-left img {
+    width: 100%;
+    height: auto;
+}
+
+.wrap-detail-design .title,
+.detail-content-right .title {
+    color: #01a453;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.detail-content-right .price {
+    
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.detail-content-right .title-price {
+    color: #01a453;
+}
+
+.detail-content-right .value-price {
+    color: red;
+    font-size: 30px;
+}
+
+.type-money {
+    color: red;
+}
+
+.custom-nav-tabs a {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.description-short {
+    display: none;
+}
+
+.active-description {
+    display: block;
+}
+
+/* ====================== Tabs ========================*/
+.custom-nav-tabs {
+    border-bottom: 1px solid #01a453;
+}
+
+.custom-nav-tabs li.active a {
+    background-color: #01a453;
+    color: #ffffff;
+    border-radius: 0;
+    margin-right: 0;
+}
+
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover {
+    background-color: #01a453;
+    color: #ffffff;
+}
+
+
+.custom-nav-tabs>li>a:focus, 
+.custom-nav-tabs>li>a:hover,
+.custom-nav-tabs>li>a:active {
+    background-color: #01a453;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+.tab-content {
+    border-right: 1px solid #01a453;
+    border-left: 1px solid #01a453;
+    border-bottom: 1px solid #01a453;
+    margin-bottom: 45px;
+    padding: 15px;
+}
+
+#contact {
+    background-image: url('../../img/contact/bg_contact.jpg');
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrap-content-contact {
+    background: #fff;
+    padding: 15px;
+}
+
+.wrap-address {
+    padding: 15px;
+}
+
+.title-address {
+    font-size: 18px;
+}
+
+.value-address {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.wrap-google-map iframe {
+    width: 100%;
+}
+
+.wrap-form .form-detail {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.buttonSubmit {
+    float: right;
+    background-color: #01a453;
+    padding: 15px 25px;
+    color: #fff;
+    border: 0;
+    font-size: 13px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.share span {
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.facebook {
+    padding: 0 5px;
+}
+
+.share {
+    padding-bottom: 15px;
+}
+
+/* remove padding news */
+.wrap-news {
+    padding-bottom: 0;
+}
+
+.wrap-news .item-title {
+    padding-bottom: 0;
+}
+
+#gallery_01 {
+    padding-top: 15px;
+}
+
+.zoom-img {
+    width: 100%;
+}
