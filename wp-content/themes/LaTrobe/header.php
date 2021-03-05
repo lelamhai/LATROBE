@@ -1,4 +1,8 @@
 <!doctype html>
+<?php
+	$version = 2;
+?>
+
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -14,18 +18,14 @@
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"/>
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+
+    <link rel="stylesheet" href="<?php echo get_bloginfo("template_directory"); ?>/assets/css/home/common.css?v=<?php echo $version?>" />
+    <link rel="stylesheet" href="<?php echo get_bloginfo("template_directory"); ?>/assets/css/home/responsive-home.css?v=<?php echo $version?>" />
+
+	  <link rel="stylesheet" href="<?php echo get_bloginfo("template_directory"); ?>/assets/css/listproduct/list-product.css?v=<?php echo $version?>" />
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="https://bootstrapious.com/tutorial/sidebar/style2.css">
-
-
-    
-
-    <link rel="stylesheet" href="<?php echo get_bloginfo("template_directory"); ?>/assets/css/home/home.css" />
-    <link rel="stylesheet" href="<?php echo get_bloginfo("template_directory"); ?>/assets/css/home/responsive-home.css" />
-
-	<link rel="stylesheet" href="<?php echo get_bloginfo("template_directory"); ?>/assets/css/listproduct/list-product.css" />
     <script src="<?php echo get_bloginfo("template_directory"); ?>/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
   </head>
 	<?php wp_head(); ?>
 </head>
@@ -36,22 +36,41 @@
       <section id="header">
         <div class="menu-top">
           <div class="wrap-logo-menu-top">
-            <img src="<?php bloginfo('template_url'); ?>/assets/imgs/img-logo-top.svg" alt="" width="240" height="81" />
+            <a href="<?php home_url(); ?>">
+               <img src="<?php bloginfo('template_url'); ?>/assets/imgs/img-logo-top.svg" alt="" width="240" height="81" />
+            </a>
           </div>
 
-          <div class="wrap-menu-top">
+          <!-- <div class="wrap-menu-top">
             <ul>
               <li><a href="">Home</a></li>
               <li><a href="">List Product 1</a></li>
               <li><a href="">List Product 2</a></li>
               <li><a href="">Contact</a></li>
             </ul>
-
-            <div class="wrap-search-menu-top">
+          </div> -->
+          <div class="wrap-search-menu-top">
               <button><img src="<?php bloginfo('template_url'); ?>/assets/imgs/icon-search.svg" alt="" /></button>
-            </div>
           </div>
         </div>
+      </section>
+
+      <!-- <section id="menu-mobile" >
+        <div class="menu-top-mobile">
+          <div class="wrap-menu-top-mobile">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">List Product 1</a></li>
+              <li><a href="">List Product 2</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+
+
+      <section>
+        <?php echo do_shortcode("[maxmegamenu location=max_mega_menu_1]"); ?>
       </section>
     </header>
 

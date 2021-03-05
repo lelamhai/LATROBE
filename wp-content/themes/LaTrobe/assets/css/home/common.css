@@ -119,7 +119,19 @@ li a {
     text-decoration: none;
 }
 
+.wrap-menu-top-mobile {
+    display:none;
+ }
 
+.wrap-menu-top-mobile ul li {
+    padding: 5px 10px;
+    float: left;
+}
+
+.wrap-menu-top-mobile ul li a {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+}
 
 /* ============================================================== Body =========================================================== */
 #main {

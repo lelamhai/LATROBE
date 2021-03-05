@@ -3,7 +3,7 @@
 }
   
   nav {
-    flex-basis: 25%;
+    width: 25%;
     box-shadow: 0 0 8px rgb(0 0 0 / 30%);
   }
   
@@ -50,7 +50,7 @@
     border:none
   }
   
-  .acitve {
+  .current-menu-item {
     text-decoration: none;
     border-left: 8px solid #e42312;
   }
@@ -62,7 +62,7 @@
   
   #se_main {
     display: unset;
-    flex-basis: 75%;
+    width: 75%;
   }
   
   #banner {
@@ -90,7 +90,7 @@
   }
   
   #banner .hide-nav > button {
-    background: transparent url(../imgs/hide-nav-bg.svg) no-repeat 0 0;
+    /* background: transparent url(../imgs/hide-nav-bg.svg) no-repeat 0 0; */
     height: 60px;
     padding: 0;
     border: none;
@@ -140,6 +140,7 @@
   
   .content #menu_content .item-list img {
     width: 100%;
+    height: auto;
   }
   
   .content #menu_content .item-list .info {
