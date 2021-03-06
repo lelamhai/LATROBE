@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-	$version = 2;
+	$version = 6;
 ?>
 
 <html <?php language_attributes(); ?>>
@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="<?php echo get_bloginfo("template_directory"); ?>/assets/css/home/responsive-home.css?v=<?php echo $version?>" />
 
 	  <link rel="stylesheet" href="<?php echo get_bloginfo("template_directory"); ?>/assets/css/listproduct/list-product.css?v=<?php echo $version?>" />
+    <link rel="stylesheet" href="<?php echo get_bloginfo("template_directory"); ?>/assets/css/listproduct/demo.css?v=<?php echo $version?>" />
+    <link rel="stylesheet" href="<?php echo get_bloginfo("template_directory"); ?>/assets/css/listproduct/responsive.css?v=<?php echo $version?>" />
     
     <script src="<?php echo get_bloginfo("template_directory"); ?>/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 

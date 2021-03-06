@@ -12,45 +12,147 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="title-footer">
-                  <h2>STUDY WITH US</h2>
+                  <?php
+                  $first = true;
+                  if(have_rows('column_1','options'))
+                  {
+                    while( have_rows('column_1','options')) : the_row();
+                    $sub_value = get_sub_field('text_column_1');
+                    if($first)
+                    {
+                        ?>
+                           <h2><?php echo $sub_value;?></h2>
+                        <?php
+                        $first = false;
+                    } 
+                    endwhile;
+                  }
+
+                  ?>
+
+
+
+                  <!-- <h2>STUDY WITH US</h2> -->
                   <div class="child-title">
                     <ul class="list-child">
-                      <li><span>Apply</span></li>
-                      <li><span>Courses</span></li>
-                      <li><span>Life at La Trobe</span></li>
-                      <li><span>FAQs</span></li>
-                      <li><span>Scholarships</span></li>
+                    <?php
+                    $first = true;
+                    if(have_rows('column_1','options'))
+                    {
+                      while( have_rows('column_1','options')) : the_row();
+                      $sub_value = get_sub_field('text_column_1');
+                      if($first)
+                      {
+                        $first = false;
+                      } else {
+                        ?>
+                         <li><span><?php echo $sub_value;?></span></li>
+                        <?php
+                      }
+                      endwhile;
+                    }
+                    ?>
                     </ul>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="title-footer">
-                  <h2>INTERNATIONAL</h2>
+
+
+
+                <?php
+                  $first = true;
+                  if(have_rows('column_2','options'))
+                  {
+                    while( have_rows('column_2','options')) : the_row();
+                    $sub_value = get_sub_field('text_column_2');
+                    if($first)
+                    {
+                        ?>
+                           <h2><?php echo $sub_value;?></h2>
+                        <?php
+                        $first = false;
+                    } 
+                    endwhile;
+                  }
+
+                ?>
+
                   <div class="child-title">
                     <ul class="list-child">
-                      <li><span>International home</span></li>
-                      <li><span>Courses and study options</span></li>
-                      <li><span>Apply and accept</span></li>
-                      <li><span>Study abroad and exchange</span></li>
-                      <li><span>Fees and scholarships</span></li>
-                      <li><span>International student enquiries</span></li>
+
+                    <?php
+                    $first = true;
+                    if(have_rows('column_2','options'))
+                    {
+                      while( have_rows('column_2','options')) : the_row();
+                      $sub_value = get_sub_field('text_column_2');
+                      if($first)
+                      {
+                        $first = false;
+                      } else {
+                        ?>
+                         <li><span><?php echo $sub_value;?></span></li>
+                        <?php
+                      }
+                      endwhile;
+                    }
+                    ?>
                     </ul>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="title-footer">
-                  <h2>CONNECT</h2>
+
+
+
+
+                <?php
+                  $first = true;
+                  if(have_rows('column_3','options'))
+                  {
+                    while( have_rows('column_3','options')) : the_row();
+                    $sub_value = get_sub_field('text_column_3');
+                    if($first)
+                    {
+                        ?>
+                           <h2><?php echo $sub_value;?></h2>
+                        <?php
+                        $first = false;
+                    } 
+                    endwhile;
+                  }
+
+                ?>
+
+
                   <div class="child-title">
                     <ul class="list-child"s>
-                      <li><span>Alumni</span></li>
-                      <li><span>Directory of staff</span></li>
-                      <li><span>Give to La Trobe</span></li>
-                      <li><span>Jobs at La Trobe</span></li>
-                      <li><span>Maps and parking</span></li>
-                      <li><span>Schools and departments</span></li>
-                      <li><span>Transport Central</span></li>
+                      
+
+
+                    <?php
+                    $first = true;
+                    if(have_rows('column_3','options'))
+                    {
+                      while( have_rows('column_3','options')) : the_row();
+                      $sub_value = get_sub_field('text_column_3');
+                      if($first)
+                      {
+                        $first = false;
+                      } else {
+                        ?>
+                         <li><span><?php echo $sub_value;?></span></li>
+                        <?php
+                      }
+                      endwhile;
+                    }
+                    ?>
+
+
+
                     </ul>
                   </div>
                 </div>
@@ -69,36 +171,24 @@
               />
             </div>
             <div class="list-socialnetwork-footer">
-              <div class="item-socilnetwork">
-                <div class="wrap-img-footer">
-                  <a href=""><img src="<?php bloginfo('template_url'); ?>/assets/imgs/icon-facebook.png" alt="" /></a>
-                </div>
-              </div>
-              <div class="item-socilnetwork">
-                <div class="wrap-img-footer">
-                  <a href=""><img src="<?php bloginfo('template_url'); ?>/assets/imgs/icon-instagram.png" alt="" /></a>
-                </div>
-              </div>
-              <div class="item-socilnetwork">
-                <div class="wrap-img-footer">
-                  <a href=""><img src="<?php bloginfo('template_url'); ?>/assets/imgs/icon-twitter.png" alt="" /></a>
-                </div>
-              </div>
-              <div class="item-socilnetwork">
-                <div class="wrap-img-footer">
-                  <a href=""><img src="<?php bloginfo('template_url'); ?>/assets/imgs/icon-facebook.png" alt="" /></a>
-                </div>
-              </div>
-              <div class="item-socilnetwork">
-                <div class="wrap-img-footer">
-                  <a href=""><img src="<?php bloginfo('template_url'); ?>/assets/imgs/icon-instagram.png" alt="" /></a>
-                </div>
-              </div>
-              <div class="item-socilnetwork">
-                <div class="wrap-img-footer">
-                  <a href=""><img src="<?php bloginfo('template_url'); ?>/assets/imgs/icon-twitter.png" alt="" /></a>
-                </div>
-              </div>
+            <?php
+                  if(have_rows('social-network','options'))
+                  {
+                      while( have_rows('social-network','options')) : the_row();
+                      $link = get_sub_field('link_social_network');
+                      $image = get_sub_field('img_social_network');
+                      
+                        ?>
+                          <div class="item-socilnetwork">
+                            <div class="wrap-img-footer">
+                              <a href="<?php echo $link;?>"><img src="<?php echo $image;?>" alt="" /></a>
+                            </div>
+                          </div>
+                        <?php
+                      
+                      endwhile;
+                  }
+              ?>
             </div>
           </div>
         </div>
@@ -135,5 +225,44 @@
         },
       });
     </script>
+
+<script>
+      $(document).ready(function () {
+      var flag = true;
+        
+
+ $('[data-toggle="offcanvas"]').click(function () {
+       $('#wrapper').toggleClass('toggled');
+      
+       var width = $( window ).width();
+       if(width >= 768 )
+       {
+          if(flag)
+          {
+              width = $( window ).width() - 220;
+              flag = false;
+          } else {
+              flag = true;
+          }
+          
+          $('#page-content-wrapper').css('width', width);
+       }
+ });  
+});
+    </script>
+
+<script>
+      $("#btn-hide").click(function () {
+        // $("nav").slideToggle("slow");
+        // $("#se_main").css("flex-basis", "100%");
+      });
+      $("#hide-menu").click(function () {
+        // $("nav").hide("slow");
+        // $("#se_main").css("flex-basis", "100%");
+
+      });
+    </script>
+
+
 </body>
 </html>

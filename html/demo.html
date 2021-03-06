@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive-list.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Hello, world!</title>
@@ -16,14 +17,12 @@
 
     <div id="wrapper">
         <div class="overlay"></div>
-    
+        <button type="button" class="btn btn-lg custom-btn" data-toggle="offcanvas">
+          <i class="fa fa-bars"></i>
+      </button>
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+          
             <ul class="nav sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                       Webseotips
-                    </a>
-                </li>
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -60,9 +59,9 @@
         <div id="page-content-wrapper">
          
             
-            <button type="button" class="btn btn-lg custom-btn" data-toggle="offcanvas">
+            <!-- <button type="button" class="btn btn-lg custom-btn" data-toggle="offcanvas">
                 <i class="fa fa-bars"></i>
-            </button>
+            </button> -->
             
             <div class="" >
                 <div class="row">
@@ -88,13 +87,25 @@
 
     <script>
       $(document).ready(function () {
- 
+      var flag = true;
+        
+
  $('[data-toggle="offcanvas"]').click(function () {
        $('#wrapper').toggleClass('toggled');
       
-       var width = $( window ).width() - 220;
-        $('#page-content-wrapper').css('width', width)
-
+       var width = $( window ).width();
+       if(width >= 767 )
+       {
+          if(flag)
+          {
+              width = $( window ).width() - 220;
+              flag = false;
+          } else {
+              flag = true;
+          }
+          
+          $('#page-content-wrapper').css('width', width);
+       }
  });  
 });
     </script>

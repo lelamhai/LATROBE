@@ -98,10 +98,10 @@
     width: 48px;
   }
   
-  @keyframes mymove {
+  /* @keyframes mymove {
     from {transform: rotate(0deg); }
       to {transform: rotate(180deg); right: 5px;}
-    }
+    } */
   
   .hide-nav > button::after {
     color: #fff;
