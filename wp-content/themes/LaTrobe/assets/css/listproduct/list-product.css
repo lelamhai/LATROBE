@@ -2,12 +2,11 @@
     display: flex;
 }
   
-  nav {
-    width: 25%;
+  #nav {
     box-shadow: 0 0 8px rgb(0 0 0 / 30%);
   }
   
-  nav #url-nav::before {
+  #nav #url-nav::before {
     position: absolute;
     left: 10px;
     top: 50%;
@@ -46,7 +45,7 @@
     padding: 18px 52px 18px 6px;
   }
   
-  .acitve a:hover{
+  .current-menu-item a:hover{
     border:none
   }
   
@@ -55,7 +54,7 @@
     border-left: 8px solid #e42312;
   }
   
-  .acitve a{
+  .current-menu-item a{
     padding: 18px 52px 18px 6px;
     background-color: #cccccc;
   }
@@ -74,8 +73,6 @@
   #banner h2 {
     display: block;
     padding: 0.7em 1em 0.7em 0.5em;
-    background: url(../imgs/bg-nodes.svg),
-      linear-gradient(to bottom, #e2231b 1%, #d14124 100%);
     font-size: 50px;
     font-weight: 700;
     color: #fff;
@@ -90,18 +87,12 @@
   }
   
   #banner .hide-nav > button {
-    /* background: transparent url(../imgs/hide-nav-bg.svg) no-repeat 0 0; */
     height: 60px;
     padding: 0;
     border: none;
     text-align: right;
     width: 48px;
   }
-  
-  /* @keyframes mymove {
-    from {transform: rotate(0deg); }
-      to {transform: rotate(180deg); right: 5px;}
-    } */
   
   .hide-nav > button::after {
     color: #fff;
@@ -228,7 +219,7 @@
       position: relative;
     }
   
-    nav {
+    #nav {
       display: none;
       position: absolute;
       top: 106px;
@@ -283,4 +274,8 @@
       flex-basis: 100%;
     }
   }
+
+
+  /*============== HaiLL - Menu Left ================== */
+
   

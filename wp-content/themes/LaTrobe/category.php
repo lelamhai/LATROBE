@@ -20,8 +20,10 @@
       </nav>
       <section id="se_main">
         <div id="banner">
-          <h2>International applications</h2>
-          <div class="hide-nav"><button id="btn-hide"></button></div>
+          <h2 style=" background: url(<?php bloginfo('template_url'); ?>/assets/imgs/bg-nodes.svg), linear-gradient(to bottom, #e2231b 1%, #d14124 100%);">
+            International applications
+          </h2>
+          <div class="hide-nav"><button id="btn-hide" style="background: transparent url(<?php bloginfo('template_url'); ?>/assets/imgs/hide-nav-bg.svg) no-repeat 0 0;"></button></div>
         </div>
 
 

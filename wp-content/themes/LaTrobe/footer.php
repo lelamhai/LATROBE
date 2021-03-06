@@ -253,12 +253,12 @@
 
 <script>
       $("#btn-hide").click(function () {
-        // $("nav").slideToggle("slow");
-        // $("#se_main").css("flex-basis", "100%");
+        $("nav").slideToggle("slow");
+        $("#se_main").css("flex-basis", "100%");
       });
       $("#hide-menu").click(function () {
-        // $("nav").hide("slow");
-        // $("#se_main").css("flex-basis", "100%");
+        $("nav").hide("slow");
+        $("#se_main").css("flex-basis", "100%");
 
       });
     </script>

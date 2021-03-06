@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-	$version = 6;
+	$version = 7;
 ?>
 
 <html <?php language_attributes(); ?>>
