@@ -261,3 +261,7 @@
     width: 100%;
     height: auto;
   }
+
+  .content {
+    padding: 45px;
+  }

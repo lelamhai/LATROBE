@@ -24,6 +24,11 @@
 
         <div id="page-content-wrapper">
             <section id="se_main">
+                <div id="banner">
+                    <h2 style=" background: url(<?php bloginfo('template_url'); ?>/assets/imgs/bg-nodes.svg), linear-gradient(to bottom, #e2231b 1%, #d14124 100%);">
+                        International applications
+                    </h2>
+                </div>
                 <div class="menu-left">
                     <button type="button" class="btn btn-lg custom-btn" data-toggle="offcanvas">
                         <i class="fa fa-bars"></i>
