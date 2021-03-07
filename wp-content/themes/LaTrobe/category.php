@@ -9,72 +9,58 @@
   $queried_category = get_term( get_query_var('cat'), 'category' );
 ?>
 
-<main id="wrap-category">
-      <nav id="nav">
-        <?php
-          wp_nav_menu(array(
-            'menu'=>'Category',
-            'menu_class'=>'open-child'
-          ));
-        ?>
-      </nav>
-      <section id="se_main">
-        <div id="banner">
-          <h2 style=" background: url(<?php bloginfo('template_url'); ?>/assets/imgs/bg-nodes.svg), linear-gradient(to bottom, #e2231b 1%, #d14124 100%);">
-            International applications
-          </h2>
-          <div class="hide-nav"><button id="btn-hide" style="background: transparent url(<?php bloginfo('template_url'); ?>/assets/imgs/hide-nav-bg.svg) no-repeat 0 0;"></button></div>
-        </div>
 
 
-<?php
-  $args = array(
-    'category_name'     => $queried_category->slug,
-    'post_status'       => 'publish'
-  ); 
+<main>
+  <div id="content">
+      <span class="slider">
+        <a href="#" onclick="openSlideMenu()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </span>
 
-  $the_query = new WP_Query( $args );
-  $total =  $the_query->post_count;
-  if ( $the_query->have_posts() ) {
-    ?>
-    
-    <div class="content">
-      <ul id="menu_content">
-      <?php
+      <div id="menu" class="nav">
+        
+        <ul id="menu-left-category">
+          <li>
+            <a href="#" class="close" onclick="closeSideMenu()">
+              <i class="fas fa-times"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">Category 1</a>
+          </li>
 
-        while ( $the_query->have_posts() ) {
-          $the_query->the_post();
-        ?>
-        <li>
-          <div class="item-list">
-            <span><?php the_post_thumbnail(); ?></span>
-            <div class="info">
-              <h2 class="title"><?php the_title();?></h2>
-              <p class="description">
-                <?php the_excerpt();?>
-              </p>
-            </div>
-          </div>
-          <a href="<?php the_permalink(); ?>" class="url_button">
-            <?php echo get_field( "link_text", $post->ID ) ?>
-          </a>
-        </li>
-        <?php
-        }
-        wp_reset_postdata();
-        ?>
+          <li>
+            <a href="">Category 2</a>
+          </li>
 
-      </ul>
-    </div>
-    <?php
+          <!-- <?php
+            wp_nav_menu(array(
+              'menu'=>'Category',
+              'container' => '',
+              'items_wrap' => '%3$s' 
+            ));
+          ?> -->
+        </ul>
+        
+      </div>
 
+  </div>
+
+</main>
+
+<script>
+  function openSlideMenu()
+  {
+    document.getElementById('menu').style.width = '250px';
+    document.getElementById('content').style.marginLeft = '250px';
   }
-?>
 
-          </ul>
-        </div>
-      </section>
-    </main>
-
-
+  function closeSideMenu()
+  {
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+  }
+</script>
 <?php get_footer();?>

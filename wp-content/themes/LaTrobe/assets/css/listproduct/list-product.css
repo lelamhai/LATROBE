@@ -44,25 +44,7 @@
     border-left: 8px solid #e42312;
     padding: 18px 52px 18px 6px;
   }
-  
-  .current-menu-item a:hover{
-    border:none
-  }
-  
-  .current-menu-item {
-    text-decoration: none;
-    border-left: 8px solid #e42312;
-  }
-  
-  .current-menu-item a{
-    padding: 18px 52px 18px 6px;
-    background-color: #cccccc;
-  }
-  
-  #se_main {
-    display: unset;
-    width: 75%;
-  }
+
   
   #banner {
     margin: 0;
@@ -106,9 +88,6 @@
   
   .content {
     width: 100%;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
   }
   
   .content #menu_content {
@@ -276,6 +255,9 @@
   }
 
 
-  /*============== HaiLL - Menu Left ================== */
+  /*============== HaiLL ================== */
 
-  
+  .item-list-image img {
+    width: 100%;
+    height: auto;
+  }

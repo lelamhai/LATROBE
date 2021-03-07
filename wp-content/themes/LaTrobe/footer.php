@@ -233,25 +233,26 @@
 
  $('[data-toggle="offcanvas"]').click(function () {
        $('#wrapper').toggleClass('toggled');
-      
+       var width = $( window ).width()
        var width = $( window ).width();
        if(width >= 768 )
        {
           if(flag)
           {
-              width = $( window ).width() - 220;
+              width = $( window ).width() - 350;
               flag = false;
           } else {
               flag = true;
           }
           
           $('#page-content-wrapper').css('width', width);
+          $('#banner').css('width', width);
        }
  });  
 });
     </script>
 
-<script>
+<!-- <script>
       $("#btn-hide").click(function () {
         $("nav").slideToggle("slow");
         $("#se_main").css("flex-basis", "100%");
@@ -261,7 +262,7 @@
         $("#se_main").css("flex-basis", "100%");
 
       });
-    </script>
+    </script> -->
 
 
 </body>
