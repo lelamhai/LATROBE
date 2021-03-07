@@ -56,7 +56,7 @@
                                 ?>
                                    <div class=col-md-3>
                                         <div class="item-list">
-                                            <div class="item-list-image"><?php echo get_the_post_thumbnail( $post_id->ID,'full'); ?></div>
+                                            <div class="item-list-image"><?php echo get_the_post_thumbnail( $post->ID,'full'); ?></div>
                                             <div class="info">
                                                 <h2 class="title"><?php the_title();?></h2>
                                                 <p class="description">
