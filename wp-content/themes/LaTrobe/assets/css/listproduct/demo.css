@@ -107,6 +107,24 @@ top: 0;
   z-index: 1;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 479px) {
-
+.menu-left button {
+  border-radius: 0;
 }
+
+ /* ==========================================================================
+      Responsive CSS Portrait Mobile
+  ========================================================================== */
+  @media only screen and (min-width: 100px) and (max-width: 768px) {
+    #wrapper {
+      background-color: red;
+    }
+        
+    #wrapper.toggled {
+      padding-left: 0 !important;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+      width: 250px;
+    }
+
+   
+  }

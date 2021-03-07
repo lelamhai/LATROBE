@@ -30,7 +30,7 @@
                         International applications
                     </h2>
                 </div>
-                <div class="menu-left">
+                <div id="menu-left" class="menu-left">
                     <button type="button" class="btn btn-lg custom-btn" data-toggle="offcanvas">
                         <i class="fa fa-bars"></i>
                     </button>
@@ -71,6 +71,8 @@
                                     <?php
                                     }
                                     wp_reset_postdata();
+                                    } else {
+                                        echo "Chưa có dữ liệu";
                                     }
                                 ?>
                     </div>

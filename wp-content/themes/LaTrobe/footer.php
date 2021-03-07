@@ -234,7 +234,6 @@
  $('[data-toggle="offcanvas"]').click(function () {
        $('#wrapper').toggleClass('toggled');
        var width = $( window ).width()
-       var width = $( window ).width();
        if(width >= 768 )
        {
           if(flag)
@@ -247,6 +246,17 @@
           
           $('#page-content-wrapper').css('width', width);
           $('#banner').css('width', width);
+       } else {
+          if(flag)
+          {
+              width = 250;
+              flag = false;
+          } else {
+              width = 0;
+              flag = true;
+          }
+          $('#menu-left').css('padding-left', width);
+
        }
  });  
 });
