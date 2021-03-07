@@ -334,6 +334,43 @@
   content: "\25B2";
 }
 
+.menu-item{
+  box-shadow: 0 -1px 0 rgb(0 0 0 / 10%);
+  margin: 0;
+  background: #efefef;
+}
+
+.menu-item > a {
+  color: #363636;
+  display: block;
+  text-decoration: none;
+  background: #efefef;
+  border-left: 8px soli transparent;
+  font-weight: 600;
+}
+
+.menu-item a:hover:not(.current-menu-item a){
+  text-decoration: none;
+  border-left: 8px solid #e42312;
+  padding: 10px 7px;
+}
+
+.current-menu-item a:hover{
+  background-color: #cccccc;
+  border:none
+}
+
+.current-menu-item {
+  text-decoration: none;
+  border-left: 8px solid #e42312;
+}
+
+.current-menu-item a{
+   padding: 10px 7px !important;  /*do anh padding từ trc nó k đổi dc  */
+  background-color: #cccccc;
+}
+
+
 /* ================================Responsive===================================== */
 
 /* ipad-pro */
@@ -360,26 +397,9 @@
     padding-bottom: 30px;
   }
 
-  /* #bnt-hide-menu {
-    position: absolute;
-    right: -39px;
-    top: 0px;
-    z-index: -1;
-    visibility: visible;
-    font-weight: 800;
-    box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+  main {
+    position: relative;
   }
-
-  #bnt-hide-menu > button {
-    border: none;
-    background-color: #efefef;
-    padding: 15px;
-  }
-
-  #se_main {
-    flex-basis: 100%;
-    width: 100%;
-  } */
 
   .content #menu_content li {
     flex-basis: 48%;
