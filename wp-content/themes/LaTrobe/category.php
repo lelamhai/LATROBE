@@ -3,6 +3,7 @@
   Template Name: list-product
  */
 ?>
+<?php $queried_category = get_term( get_query_var('cat'), 'category' );?>
 <?php get_header();?>
 
 <div id="wrapper">
